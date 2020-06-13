@@ -13,7 +13,6 @@ package NavigationCommands;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.By;
 
 public class NavigateCommands {
 
@@ -29,6 +28,9 @@ public class NavigateCommands {
 		 // Open ToolsQA web site
 		 String appUrl = "http://shop.demoqa.com/";
 		 driver.get(appUrl);
+		 
+		 //
+		 
 
 	}
 
