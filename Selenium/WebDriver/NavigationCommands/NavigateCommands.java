@@ -13,6 +13,7 @@ package NavigationCommands;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
 
 public class NavigateCommands {
 
@@ -29,8 +30,32 @@ public class NavigateCommands {
 		 String appUrl = "http://shop.demoqa.com/";
 		 driver.get(appUrl);
 		 
-		 //
+		 //Click on Dismiss button at the top of the page
+		 driver.findElement(By.xpath("/html/body/p/a")).click();
+		 System.out.println("Sucess on click Dismiss");
 		 
+		 //put size max of the window
+		 driver.manage().window().maximize();
+		 
+		 //Make click on the menu My Account
+		 driver.findElement(By.xpath("//*[@id=\"noo-site\"]/header/div[1]/div/ul[2]/li[2]/a")).click();
+		 
+		 //Go back to the home page
+		 driver.navigate().back();
+		 
+		 //Go foward to Registration page
+		 driver.navigate().forward();
+		 
+		 //Go to the Home page
+		 driver.navigate().to(appUrl);
+		 
+		 //Refresh the Browser
+		 driver.navigate().refresh();
+		 
+		 //close the browser
+		 driver.close();
+		 
+		 System.out.println("App ends sucessfully!");
 
 	}
 
