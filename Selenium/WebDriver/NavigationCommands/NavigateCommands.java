@@ -56,6 +56,7 @@ public class NavigateCommands {
 		 driver.close();
 		 
 		 System.out.println("App ends sucessfully!");
+		 System.out.println("End");
 
 	}
 
